@@ -1,0 +1,15 @@
+#text{
+    line-height: 75px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+
+#home-image{
+    margin: 75px auto;
+    background-image: url(../img/redbullglavna.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height:800px;
+    border-radius: 0%;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    $(function() {
+        $('.slide:gt(0)').hide();
+            setInterval(function() {
+            $('.slide:first').fadeOut('slow').next().fadeIn('slow').end().appendTo('.slider');
+        }, 2500)
+});</script> 
+ 
+    <title>Galerija</title>
+
+
+
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="header">
+        <header>
+            <nav>
+                    <ul>
+                            <li id="home"><a href="index.html" >Home</a></li>
+                            <li onclick="toggleMenu()">Menu</li>
+                            <nav id="menu">
+                                <ul>
+                                    <li id="about-us"><a href="onama.html">O nama</a></li>
+                                    <li id="gallery"><a href="gallery.html">Slike</a></li>
+                                    <li id="contact"><a href="RedBullTim.html" >Postani deo nas</a></li>
+                                </ul>
+                    </nav>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="main">
+     
+            <ul class="slider">
+                    <li class="slide"><img src="img/rbslika1.jpg" alt="Slide 1" width="500px" height="300px" /></li>
+                    <li class="slide"><img src="img/rbslika2.jpg" alt="Slide 2" width="500px" height="300px" /></li>
+                    <li class="slide"><img src="img/rbslika3.jpg" alt="Slide 3" width="600px" height="300px"/></li>
+                    <li class="slide"><img src="img/rbslika4.jpg" alt="Slide 4" width="500px" height="300px"/></li>
+                    <li class="slide"><img src="img/rbslika5.jpg" alt="Slide 5" width="500px" height="300px"/></li>
+            </ul>
+               
+     
+  
+    </div>
+
+    <div class="footer">
+         <span style="font-size: 20px; margin:0 auto"> Posetite nas na društvenim mrežama: 
+            <a href="https://www.instagram.com/redbullrs/?hl=sr"><img src="img/insta.png" height="40"> </a> 
+        <a href="https://www.facebook.com/RedBull/"><img src="img/face.png" height="34" > </a>
+        <a href="https://twitter.com/redbull"><img src="img/tviter1.png" height="34" > </a>
+        <a href="https://at.linkedin.com/company/red-bull"><img src="img/linkediin.png" height="34" > </a>
+        </span>
+    </div>
+</div>
+
+
+</body>
+</html>

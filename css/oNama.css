@@ -1,0 +1,39 @@
+.grid-container {
+   /* display: grid;
+    grid-template-areas:
+            'header header header'
+            'main main main'
+            'footer footer footer';*/
+    background-color: #3b3f3d;
+    height: 100vh;
+}
+
+.grid-container > .main{
+    font-size: 18px;
+    padding: 20px 100px;
+    text-align: left;
+}
+
+.main {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#sponsors {
+    background-color: #8B1A1A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.sponsor-img{
+    animation: fadein 4s;
+    box-shadow: 0 2px 18px 0 rgba(0,0,0,0.3);
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+    
+

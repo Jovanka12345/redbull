@@ -1,0 +1,10 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+            'header header header'
+            'main main main'
+            'footer footer footer';
+            height: 100vh;
+            font-size: 10px;
+}
+

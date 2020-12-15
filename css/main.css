@@ -1,0 +1,91 @@
+body{
+  margin: 0;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  background-size: cover;
+}
+
+.header {
+  color: white;
+   grid-area: header; 
+   background-color: #5E5E5E;} 
+
+.main {
+   background-color:#C1CDCD;
+   /*grid-area: main;*/
+   align-items: center;
+   height: 100%;
+  }
+
+.footer { 
+  color: white;
+  grid-area: footer;
+  background-color: #363636;
+ }
+
+.grid-container {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /*display: grid;
+  grid-template-areas:
+          'header header header'
+          'main main main'
+          'footer footer footer';*/
+  background-color: #5E5E5E;
+}
+
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 40px;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+li > a {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+#menu {
+  display: none;
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+  .grid-container{
+    width: 768px;
+    height: 100vh;
+  }
+  .main{
+    width: 768px;
+    height: 1024px;
+  }
+  .footer{
+    position: absolute;
+    top: 200px;
+  }
+  #form1{
+    height: 800px;
+  }
+  html{
+    background-color: #5E5E5E;
+  }
+}
