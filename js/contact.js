@@ -16,3 +16,12 @@ function submitForm() {
     }
 
 }
+
+$(document).ready(function(){
+    $("#spec").focus(function(){
+      $("#spec_").css("display", "inline").fadeOut(5100);
+    });
+  });
+  $(document).ready(function(){
+    $("#spec_").hide();
+  });
