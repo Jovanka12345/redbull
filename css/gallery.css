@@ -1,4 +1,4 @@
-/*.image-container-top {
+.image-container-top {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-}*/
+}
 
 .main {
     margin-top :100px;
